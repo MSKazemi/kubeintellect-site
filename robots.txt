@@ -1,0 +1,61 @@
+User-Agent: OAI-SearchBot
+Allow: /
+Disallow: /api/
+
+User-Agent: ChatGPT-User
+Allow: /
+Disallow: /api/
+
+User-Agent: Claude-SearchBot
+Allow: /
+Disallow: /api/
+
+User-Agent: Claude-User
+Allow: /
+Disallow: /api/
+
+User-Agent: PerplexityBot
+Allow: /
+Disallow: /api/
+
+User-Agent: Perplexity-User
+Allow: /
+Disallow: /api/
+
+User-Agent: Googlebot
+Allow: /
+Disallow: /api/
+
+User-Agent: Google-Extended
+Allow: /
+Disallow: /api/
+
+User-Agent: bingbot
+Allow: /
+Disallow: /api/
+
+User-Agent: Applebot
+Allow: /
+Disallow: /api/
+
+User-Agent: Applebot-Extended
+Allow: /
+Disallow: /api/
+
+User-Agent: DuckAssistBot
+Allow: /
+Disallow: /api/
+
+User-Agent: MistralAI-User
+Allow: /
+Disallow: /api/
+
+User-Agent: Amazonbot
+Allow: /
+Disallow: /api/
+
+User-Agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://kubeintellect.com/sitemap.xml

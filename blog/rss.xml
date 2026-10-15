@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KubeIntellect Blog</title>
+    <link>https://kubeintellect.com/blog</link>
+    <description>Technical writing on LLM agents, AI SRE, and Kubernetes operations.</description>
+    <language>en</language>
+    <atom:link href="https://kubeintellect.com/blog/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Kubernetes AI agent should never say &apos;healthy&apos; about pods it couldn&apos;t see</title>
+      <link>https://kubeintellect.com/blog/never-answer-healthy-from-a-truncated-snapshot</link>
+      <guid isPermaLink="true">https://kubeintellect.com/blog/never-answer-healthy-from-a-truncated-snapshot</guid>
+      <pubDate>Sat, 19 Sep 2026 00:00:00 GMT</pubDate>
+      <description>A one-line bug could make a truncated cluster listing look complete: on a 401-pod cluster, one CrashLoopBackOff sorted past an 8,000-character cap and the agent reported &apos;85 pods, no issues.&apos; The cause, why green tests missed it, and the fix.</description>
+    </item>
+    <item>
+      <title>KubeIntellect is peer-reviewed and open access — read the paper</title>
+      <link>https://kubeintellect.com/blog/kubeintellect-peer-reviewed-paper</link>
+      <guid isPermaLink="true">https://kubeintellect.com/blog/kubeintellect-peer-reviewed-paper</guid>
+      <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+      <description>The KubeIntellect framework is published in the Journal of Grid Computing (Springer, 2026) and is open access. 93% query resolution on a live cluster, +25 points over a raw GPT-4o baseline. Links to the DOI, ACM, and arXiv.</description>
+    </item>
+    <item>
+      <title>How to choose an AI tool for Kubernetes: the capabilities that matter</title>
+      <link>https://kubeintellect.com/blog/ai-kubernetes-tools-landscape</link>
+      <guid isPermaLink="true">https://kubeintellect.com/blog/ai-kubernetes-tools-landscape</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <description>A capability-first guide to evaluating any AI tool for Kubernetes — the difference between look, explain, reason, and act — and where to draw the safety line.</description>
+    </item>
+    <item>
+      <title>When an AI agent hits a wall, it should write its own tool</title>
+      <link>https://kubeintellect.com/blog/runtime-tool-synthesis</link>
+      <guid isPermaLink="true">https://kubeintellect.com/blog/runtime-tool-synthesis</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <description>How the KubeIntellect agent synthesizes, validates, and registers new Kubernetes tools at runtime — and the guardrails that make it safe. 81.8% success on novel requests, from the published evaluation.</description>
+    </item>
+    <item>
+      <title>Why more AI agents is not more capability</title>
+      <link>https://kubeintellect.com/blog/more-agents-is-not-more-capability</link>
+      <guid isPermaLink="true">https://kubeintellect.com/blog/more-agents-is-not-more-capability</guid>
+      <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+      <description>An honest engineering lesson from building an LLM operator for Kubernetes: going from the 13 specialized agents of the published v1 design to a lean coordinator made it better and cheaper. More agents is not more capability.</description>
+    </item>
+  </channel>
+</rss>

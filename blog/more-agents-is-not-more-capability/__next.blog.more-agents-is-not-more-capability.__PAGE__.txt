@@ -1,0 +1,163 @@
+2:"$Sreact.fragment"
+3:"/_next/static/chunks/0umf92h1sb77c.js"
+4:I[39756,["$3"],"default"]
+5:I[37457,["$3"],"default"]
+d:"/_next/static/chunks/2n5qeheznvl4u.js"
+e:I[22016,["$3","$d"],""]
+16:"ViewportBoundary"
+17:I[97367,["$3"],"$16"]
+18:"MetadataBoundary"
+19:I[97367,["$3"],"$18"]
+1a:"$Sreact.suspense"
+1b:I[27201,["$3"],"IconMark"]
+7:X
+7:C
+8:X
+c:T411,{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does adding more agents make an LLM system more capable?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. In our Kubernetes case study, a lean single-coordinator design outperformed an earlier 13-agent architecture on diagnostic quality while using roughly half the tokens. More agents adds routing overhead, token cost, and failure modes; capability comes from the right structure, not the agent count. (These cross-version results are from a follow-up study currently under review, not the peer-reviewed paper.)"}},{"@type":"Question","name":"When is a multi-agent design actually worth it?","acceptedAnswer":{"@type":"Answer","text":"When the sub-tasks are genuinely independent and benefit from parallelism or specialization — for example, fanning out to gather logs, metrics, and events at the same time. The win is parallel evidence-gathering and clear responsibility boundaries, not simply having more agents in the graph."}}]}b:[["children",{"s":"__PAGE__","h":160,"d":{"r":["$","$2","c",{"children":[["$","div",null,{"className":"min-h-screen bg-[var(--cloud)] text-[var(--ink-soft)]","children":[["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"$c"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BlogPosting\",\"headline\":\"Why more AI agents is not more capability\",\"image\":{\"@type\":\"ImageObject\",\"url\":\"https://kubeintellect.com/opengraph-image.png\",\"width\":1200,\"height\":630},\"description\":\"An honest engineering lesson from building an LLM operator for Kubernetes: going from the 13 specialized agents of the published v1 design to a lean coordinator made it better and cheaper.\",\"datePublished\":\"2026-07-30\",\"dateModified\":\"2026-10-09\",\"author\":{\"@id\":\"https://kubeintellect.com/#mohsen\"},\"publisher\":{\"@id\":\"https://kubeintellect.com/#org\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://kubeintellect.com/blog/more-agents-is-not-more-capability\"}}"}}],["$","script",null,{"type":"application/ld+json","dangerouslySetInnerHTML":{"__html":"{\"@context\":\"https://schema.org\",\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https://kubeintellect.com\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Blog\",\"item\":\"https://kubeintellect.com/blog\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Why more AI agents is not more capability\",\"item\":\"https://kubeintellect.com/blog/more-agents-is-not-more-capability\"}]}"}}],["$","nav",null,{"className":"border-b border-[var(--line)] bg-[var(--surface)] px-4 sm:px-6 py-4","children":["$","div",null,{"className":"max-w-3xl mx-auto flex items-center justify-between","children":[["$","$Le",null,{"href":"/","className":"font-[family-name:var(--font-display)] font-semibold text-[var(--ink)] text-sm hover:text-[var(--blue-strong)] transition-colors flex items-center gap-2","children":[["$","span",null,{"aria-hidden":"true","children":"←"}]," KubeIntellect"]}],["$","$Le",null,{"href":"/#get-started","className":"font-mono text-xs px-4 py-2 border border-[var(--line-strong)] text-[var(--blue-strong)] rounded-lg hover:bg-[var(--blue-tint)] hover:border-[var(--blue)] transition-colors","children":"Quick install guide"}]]}]}],"$Lf","$L10","$L11","$L12"]}],["$L13"],"$L14"]}],"p":"$@15","v":null,"s":"$8"}}]]
+9:[["children",{"s":"more-agents-is-not-more-capability","h":96,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@a","v":"$7","s":"$8"},"c":"$Qb"}]]
+1:[["children",{"s":"blog","h":64,"d":{"r":["$","$2","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","template":["$","$L5",null,{}]}]]}],"p":"$@6","v":"$7","s":"$8"},"c":"$Q9"}]]
+0:{"t":{"t":{"s":"","h":16,"c":"$Q1"},"h":{"r":["$","$2","h",{"children":[null,["$","$L17",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","$L19",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$1a",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"Why more AI agents is not more capability (a Kubernetes case study) | KubeIntellect"}],["$","meta","1",{"name":"description","content":"An engineering lesson from an LLM system for Kubernetes: replacing the published v1 design's 13 specialized agents with a lean coordinator (v4)."}],["$","meta","2",{"name":"keywords","content":"Kubernetes AI,Kubernetes debugging,Kubernetes root cause analysis,human-governed AI SRE,LLM Kubernetes,Kubernetes automation,KubeIntellect,AI SRE tool,Kubernetes troubleshooting,multi-agent Kubernetes,pod crash analysis,CrashLoopBackOff fix,Kubernetes natural language,AIOps Kubernetes"}],["$","meta","3",{"name":"robots","content":"index, follow"}],["$","meta","4",{"name":"googlebot","content":"index, follow"}],["$","link","5",{"rel":"canonical","href":"https://kubeintellect.com/blog/more-agents-is-not-more-capability"}],["$","meta","6",{"property":"og:title","content":"Why more AI agents is not more capability"}],["$","meta","7",{"property":"og:description","content":"From 13 agents to a lean coordinator: an honest Kubernetes case study on multi-agent LLM design."}],["$","meta","8",{"property":"og:url","content":"https://kubeintellect.com/blog/more-agents-is-not-more-capability"}],["$","meta","9",{"property":"og:site_name","content":"KubeIntellect"}],["$","meta","10",{"property":"og:image","content":"https://kubeintellect.com/opengraph-image.png"}],["$","meta","11",{"property":"og:image:type","content":"image/png"}],["$","meta","12",{"property":"og:image:width","content":"1200"}],["$","meta","13",{"property":"og:image:height","content":"630"}],["$","meta","14",{"property":"og:image:alt","content":"KubeIntellect — the human-governed AI SRE for Kubernetes: ask your cluster in plain English"}],["$","meta","15",{"property":"og:type","content":"article"}],["$","meta","16",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","17",{"name":"twitter:title","content":"Why more AI agents is not more capability"}],["$","meta","18",{"name":"twitter:description","content":"A Kubernetes case study: fewer agents, higher quality, ~half the tokens."}],["$","meta","19",{"name":"twitter:image","content":"https://kubeintellect.com/twitter-image.png"}],["$","meta","20",{"name":"twitter:image:alt","content":"KubeIntellect — the human-governed AI SRE for Kubernetes: ask your cluster in plain English"}],["$","meta","21",{"name":"twitter:image:type","content":"image/png"}],["$","meta","22",{"name":"twitter:image:width","content":"1200"}],["$","meta","23",{"name":"twitter:image:height","content":"630"}],["$","link","24",{"rel":"shortcut icon","href":"/icon.svg"}],["$","link","25",{"rel":"icon","href":"/icon.svg"}],["$","$L1b","26",{}]]}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":"$@1c","v":null,"s":"$8"}},"a":"$@1d","u":"$@1e","b":"zVRtwJyzLPjax3UEKJ909"}
+2a:I[97367,["$3"],"OutletBoundary"]
+:HL["/logo.svg","image"]
+f:["$","div",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 pt-8","children":["$","nav",null,{"aria-label":"Breadcrumb","className":"font-mono text-xs text-[var(--muted)]","children":["$","ol",null,{"className":"flex flex-wrap items-center gap-2","children":[["$","li",null,{"children":["$","$Le",null,{"href":"/","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Home"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}],[["$","li",null,{"children":["$","$Le",null,{"href":"/blog","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Blog"}]}],["$","li",null,{"aria-hidden":"true","children":"/"}]],["$","li",null,{"className":"text-[var(--ink-soft)]","aria-current":"page","children":"Why more AI agents is not more capability"}]]}]}]}]
+10:["$","main",null,{"className":"max-w-3xl mx-auto px-4 sm:px-6 py-10 sm:py-14","children":[["$","header",null,{"className":"mb-10","children":[["$","h1",null,{"className":"font-[family-name:var(--font-display)] text-3xl sm:text-4xl font-bold text-[var(--ink)] leading-tight tracking-tight mb-4","children":"Why more AI agents is not more capability"}],["$","p",null,{"className":"text-[var(--ink-soft)] text-lg leading-relaxed","children":"An honest engineering lesson from building an LLM operator for Kubernetes: going from the 13 specialized agents of the published v1 design to a lean coordinator made it better and cheaper."}],["$","div",null,{"className":"mt-4 h-px w-full bg-[var(--line)]"}]]}],["$","article",null,{"className":"article-body","children":[["$","div",null,{"style":{"borderLeft":"3px solid var(--blue)","background":"var(--blue-tint)","padding":"0.85rem 1.1rem","borderRadius":"0.5rem","margin":"0 0 1.5rem","fontSize":"0.9rem"},"children":[["$","strong",null,{"children":"Preprint note:"}]," the peer-reviewed paper describes the original 13-agent architecture. The cross-version comparison below is from a follow-up study currently ",["$","strong",null,{"children":"under review"}]," — treat these numbers as preprint, not yet peer-reviewed."]}],["$","p",null,{"children":["$","strong",null,{"children":"“More agents” is one of the most seductive and most wrong instincts in LLM system design. I know because I shipped a 13-agent architecture for Kubernetes — and then got better results by tearing most of it out."}]}],["$","h2",null,{"children":"The maximalist version"}],["$","p",null,{"children":"The first architecture — v1, the one published in the paper — was capability-maximal: a supervisor LLM routing every turn to one of thirteen specialized agents — logs, metrics, RBAC, lifecycle, deletion, code generation, and more — plus runtime tool synthesis and a four-tier memory system. It worked, and it was the version that got peer-reviewed. But it was big: tens of thousands of lines, a lot of routing logic, and a lot of tokens spent just deciding which agent should handle a request."}],["$","h2",null,{"children":"The lean version won"}],["$","p",null,{"children":["A later redesign collapsed the thirteen agents into a single coordinator running a tool-use loop over a small set of guarded tools, with a focused fan-out only for root-cause analysis (gather logs, metrics, and events in parallel). In our cross-version evaluation the lean and platform designs reached ",["$","strong",null,{"children":"higher diagnostic quality at roughly half the token cost"}]," of the maximalist version, with a fraction of the code."]}],["$","p",null,{"children":"Why the reversal?"}],["$","ul",null,{"children":[["$","li",null,{"children":[["$","strong",null,{"children":"Routing is not free."}]," Every hop between agents is tokens spent and a chance to route wrong. Thirteen options is thirteen ways to send a request to the agent that can’t quite handle it."]}],["$","li",null,{"children":[["$","strong",null,{"children":"Context fragmentation."}]," Splitting a problem across many agents means each sees only a slice. A single coordinator holding the whole picture reasons better about a messy, cross-cutting failure."]}],["$","li",null,{"children":[["$","strong",null,{"children":"Surface area is cost."}]," More agents means more prompts to maintain, more failure modes, and more tokens — all of which scale against you."]}]]}],["$","h2",null,{"children":"Where multiple agents genuinely help"}],["$","p",null,{"children":["The nuance: parallel ",["$","em",null,{"children":"evidence gathering"}]," is a real win. Fanning out to pull logs, metrics, and events at the same time, then synthesizing them, is faster and cleaner than doing it serially. That’s specialization for parallelism and clear boundaries — not specialization for its own sake. The lean design kept exactly that fan-out and dropped the rest."]}],"$L1f","$L20","$L21"]}],"$L22","$L23","$L24","$L25"]}]
+26:Te2b,
+        .article-body {
+          max-width: 65ch;
+        }
+        .article-body h2 {
+          font-family: var(--font-display);
+          font-size: 1.5rem;
+          font-weight: 700;
+          letter-spacing: -0.01em;
+          color: var(--ink);
+          margin-top: 2.75rem;
+          margin-bottom: 0.85rem;
+          padding-bottom: 0.4rem;
+          border-bottom: 1px solid var(--line);
+        }
+        .article-body h3 {
+          font-family: var(--font-display);
+          font-size: 1.15rem;
+          font-weight: 600;
+          letter-spacing: -0.01em;
+          color: var(--ink);
+          margin-top: 1.85rem;
+          margin-bottom: 0.5rem;
+        }
+        .article-body p {
+          color: var(--ink-soft);
+          line-height: 1.8;
+          margin-bottom: 1.25rem;
+        }
+        .article-body a {
+          color: var(--blue-strong);
+          text-decoration: none;
+          transition: color 0.15s ease;
+        }
+        .article-body a:hover {
+          color: var(--blue-ink);
+          text-decoration: underline;
+        }
+        .article-body ul, .article-body ol {
+          color: var(--ink-soft);
+          padding-left: 1.5rem;
+          margin-bottom: 1.25rem;
+          line-height: 1.8;
+        }
+        .article-body ul { list-style: disc; }
+        .article-body ol { list-style: decimal; }
+        .article-body li { margin-bottom: 0.35rem; }
+        .article-body li::marker { color: var(--muted); }
+        .article-body code {
+          font-family: var(--font-mono);
+          font-size: 0.85em;
+          background: var(--blue-tint);
+          border: 1px solid var(--line);
+          border-radius: 4px;
+          padding: 0.1em 0.45em;
+          color: var(--blue-ink);
+        }
+        .article-body pre {
+          background: var(--ink-panel);
+          border: 1px solid var(--line-strong);
+          border-radius: 10px;
+          padding: 1.25rem 1.5rem;
+          overflow-x: auto;
+          margin: 1.5rem 0;
+          font-family: var(--font-mono);
+          font-size: 0.82rem;
+          line-height: 1.7;
+          color: #d5deec;
+        }
+        .article-body pre code {
+          background: none;
+          border: none;
+          padding: 0;
+          color: inherit;
+          font-size: inherit;
+        }
+        .article-body strong { color: var(--ink); font-weight: 600; }
+        .article-body blockquote {
+          border-left: 3px solid var(--blue);
+          background: var(--blue-tint);
+          padding: 0.85rem 1.15rem;
+          border-radius: 0 8px 8px 0;
+          margin: 1.5rem 0;
+          color: var(--ink-soft);
+        }
+        .article-body blockquote p:last-child { margin-bottom: 0; }
+        .article-body table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 1.5rem 0;
+          font-size: 0.92rem;
+        }
+        .article-body th, .article-body td {
+          border: 1px solid var(--line);
+          padding: 0.6rem 0.85rem;
+          text-align: left;
+        }
+        .article-body th {
+          background: var(--cloud-2);
+          color: var(--ink);
+          font-weight: 600;
+        }
+        .article-body td { color: var(--ink-soft); }
+        .article-body hr {
+          border: 0;
+          border-top: 1px solid var(--line);
+          margin: 2rem 0;
+        }
+        .article-body .note {
+          border-left: 3px solid var(--blue);
+          background: var(--blue-tint);
+          padding: 0.85rem 1.15rem;
+          border-radius: 0 8px 8px 0;
+          margin: 1.5rem 0;
+          color: var(--ink-soft);
+          font-size: 0.9rem;
+        }
+      11:["$","style",null,{"children":"$26"}]
+12:["$","footer",null,{"className":"bg-white border-t border-[var(--line)] text-[var(--ink-soft)]","children":["$","div",null,{"className":"ki-container py-14","children":[["$","div",null,{"className":"flex flex-col md:flex-row justify-between gap-10 mb-12","children":[["$","div",null,{"className":"max-w-xs","children":[["$","div",null,{"className":"flex items-center gap-2.5 mb-3","children":[["$","img",null,{"src":"/logo.svg","alt":"KubeIntellect mark","width":44,"height":44,"className":"rounded-lg"}],["$","span",null,{"className":"font-mono font-bold text-base tracking-tight text-[var(--ink)]","children":"KubeIntellect"}]]}],["$","p",null,{"className":"text-sm mb-6","children":"The human-governed AI SRE for Kubernetes"}]]}],["$","div",null,{"className":"grid grid-cols-2 md:grid-cols-4 gap-8","children":[["$","div",null,{"children":[["$","h3",null,{"className":"text-[var(--ink)] font-mono font-semibold text-xs tracking-widest uppercase mb-4","children":"Product"}],["$","ul",null,{"className":"space-y-2.5 text-sm","children":[["$","li",null,{"children":["$","$Le",null,{"href":"/#features","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Features"}]}],["$","li",null,{"children":["$","$Le",null,{"href":"/#how-it-works","className":"hover:text-[var(--blue-strong)] transition-colors","children":"How It Works"}]}],["$","li",null,{"children":["$","a",null,{"href":"/architecture","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Architecture"}]}],["$","li",null,{"children":["$","a",null,{"href":"/docs","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Documentation"}]}],["$","li",null,{"children":["$","a",null,{"href":"/research","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Research"}]}],["$","li",null,{"children":["$","a",null,{"href":"/blog","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Blog"}]}],["$","li",null,{"children":["$","$Le",null,{"href":"/#get-started","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Quick Install Guide"}]}],["$","li",null,{"children":["$","$Le",null,{"href":"/contact","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Contact"}]}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"text-[var(--ink)] font-mono font-semibold text-xs tracking-widest uppercase mb-4","children":"Solutions & Guides"}],["$","ul",null,{"className":"space-y-2.5 text-sm","children":[["$","li",null,{"children":["$","a",null,{"href":"/ai-sre-for-kubernetes","className":"hover:text-[var(--blue-strong)] transition-colors","children":"AI SRE for Kubernetes"}]}],["$","li",null,{"children":["$","a",null,{"href":"/kubernetes-ai-ops","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Kubernetes AI Ops"}]}],["$","li",null,{"children":["$","a",null,{"href":"/kubernetes-ai-security","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Kubernetes AI Security"}]}],["$","li",null,{"children":["$","a",null,{"href":"/kubectl-natural-language","className":"hover:text-[var(--blue-strong)] transition-colors","children":"kubectl in Natural Language"}]}],["$","li",null,{"children":["$","a",null,{"href":"/kubernetes-debugging-guide","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Kubernetes Debugging Guide"}]}],["$","li",null,{"children":["$","a",null,{"href":"/kubernetes-root-cause-analysis","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Root Cause Analysis"}]}],["$","li",null,{"children":["$","a",null,{"href":"/fix-crashloopbackoff","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Fix CrashLoopBackOff"}]}],["$","li",null,{"children":["$","a",null,{"href":"/k8s-troubleshooting-playbook","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Troubleshooting Playbook"}]}]]}]]}],["$","div",null,{"children":[["$","h3",null,{"className":"text-[var(--ink)] font-mono font-semibold text-xs tracking-widest uppercase mb-4","children":"KubeIntellect"}],["$","ul",null,{"className":"space-y-2.5 text-sm","children":[["$","li",null,{"children":["$","a",null,{"href":"https://mskazemi.github.io/kubeintellect/","target":"_blank","rel":"noopener noreferrer","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Documentation"}]}],"$L27"]}]]}],"$L28"]}]]}],"$L29"]}]}]
+13:["$","script","script-0",{"src":"/_next/static/chunks/2n5qeheznvl4u.js","async":true}]
+14:["$","$L2a",null,{"children":["$","$1a",null,{"name":"Next.MetadataOutlet","children":"$@2b"}]}]
+1e:true
+8:300
+1f:["$","h2",null,{"children":"The takeaway"}]
+20:["$","p",null,{"children":"Count agents the way you count microservices: each one should earn its place. If an agent isn’t buying you parallelism, a hard capability boundary, or genuinely independent work, it’s buying you latency, tokens, and bugs. Start with one good reasoner and add structure only where the evidence says it pays."}]
+21:["$","p",null,{"children":["$","em",null,{"children":["The peer-reviewed architecture and evaluation are on the ",["$","a",null,{"href":"/research","children":"research page"}],"; the cross-version study is ongoing."]}]}]
+22:["$","div",null,{"className":"mt-16 rounded-xl border border-[var(--line)] bg-[var(--surface)] p-8 text-center shadow-[0_1px_2px_rgba(11,26,43,0.04),0_8px_24px_rgba(11,26,43,0.06)]","children":[["$","p",null,{"className":"font-mono text-[var(--blue-strong)] text-xs mb-2 tracking-[0.14em] uppercase","children":"Skip the manual work"}],["$","h2",null,{"className":"text-2xl sm:text-3xl font-bold text-[var(--ink)] font-[family-name:var(--font-display)] tracking-tight mb-3","children":"Let KubeIntellect debug this automatically"}],["$","p",null,{"className":"text-[var(--ink-soft)] mb-6 max-w-md mx-auto","children":"Paste your pod name and get root cause analysis in seconds — no kubectl spelunking required."}],["$","div",null,{"className":"flex flex-col sm:flex-row gap-3 justify-center items-center","children":[["$","$Le",null,{"href":"/#get-started","className":"inline-flex items-center gap-2 px-8 py-3.5 bg-[var(--blue)] text-white font-semibold rounded-lg font-mono text-sm hover:bg-[var(--blue-strong)] transition-colors shadow-[0_6px_16px_rgba(50,108,229,0.25)]","children":["Try Now",["$","span",null,{"aria-hidden":"true","children":"→"}]]}],["$","$Le",null,{"href":"/architecture","className":"font-mono text-[var(--blue-strong)] text-sm hover:underline hover:text-[var(--blue-ink)] transition-colors","children":"See how KubeIntellect works →"}]]}]]}]
+23:["$","section",null,{"className":"mt-16","aria-labelledby":"faq-heading","children":[["$","h2",null,{"id":"faq-heading","className":"font-[family-name:var(--font-display)] text-2xl font-bold text-[var(--ink)] tracking-tight mb-8 border-b border-[var(--line)] pb-4","children":"Frequently Asked Questions"}],["$","dl",null,{"className":"space-y-4","children":[["$","div","Does adding more agents make an LLM system more capable?",{"className":"border border-[var(--line)] bg-[var(--surface)] rounded-lg p-5","children":[["$","dt",null,{"className":"font-[family-name:var(--font-display)] font-semibold text-[var(--ink)] mb-2","children":"Does adding more agents make an LLM system more capable?"}],["$","dd",null,{"className":"text-[var(--ink-soft)] leading-relaxed","children":"Not necessarily. In our Kubernetes case study, a lean single-coordinator design outperformed an earlier 13-agent architecture on diagnostic quality while using roughly half the tokens. More agents adds routing overhead, token cost, and failure modes; capability comes from the right structure, not the agent count. (These cross-version results are from a follow-up study currently under review, not the peer-reviewed paper.)"}]]}],["$","div","When is a multi-agent design actually worth it?",{"className":"border border-[var(--line)] bg-[var(--surface)] rounded-lg p-5","children":[["$","dt",null,{"className":"font-[family-name:var(--font-display)] font-semibold text-[var(--ink)] mb-2","children":"When is a multi-agent design actually worth it?"}],["$","dd",null,{"className":"text-[var(--ink-soft)] leading-relaxed","children":"When the sub-tasks are genuinely independent and benefit from parallelism or specialization — for example, fanning out to gather logs, metrics, and events at the same time. The win is parallel evidence-gathering and clear responsibility boundaries, not simply having more agents in the graph."}]]}]]}]]}]
+24:["$","section",null,{"className":"mt-12","aria-labelledby":"related-heading","children":[["$","h2",null,{"id":"related-heading","className":"font-[family-name:var(--font-display)] text-lg font-bold text-[var(--ink)] tracking-tight mb-4 border-b border-[var(--line)] pb-3","children":"Related Kubernetes Guides"}],["$","ul",null,{"className":"space-y-2","children":[["$","li","/blog/runtime-tool-synthesis",{"children":["$","$Le",null,{"href":"/blog/runtime-tool-synthesis","className":"font-mono text-[var(--blue-strong)] text-sm hover:underline hover:text-[var(--blue-ink)] transition-colors","children":["Runtime tool synthesis"," →"]}]}],["$","li","/architecture",{"children":["$","$Le",null,{"href":"/architecture","className":"font-mono text-[var(--blue-strong)] text-sm hover:underline hover:text-[var(--blue-ink)] transition-colors","children":["How KubeIntellect works"," →"]}]}],["$","li","/research",{"children":["$","$Le",null,{"href":"/research","className":"font-mono text-[var(--blue-strong)] text-sm hover:underline hover:text-[var(--blue-ink)] transition-colors","children":["The peer-reviewed research"," →"]}]}],["$","li","/blog",{"children":["$","$Le",null,{"href":"/blog","className":"font-mono text-[var(--blue-strong)] text-sm hover:underline hover:text-[var(--blue-ink)] transition-colors","children":["More from the blog"," →"]}]}]]}],["$","div",null,{"className":"mt-4","children":["$","$Le",null,{"href":"/demo","className":"font-mono text-[var(--blue-strong)] text-sm hover:underline hover:text-[var(--blue-ink)] transition-colors","children":"Watch the demo →"}]}]]}]
+25:["$","div",null,{"className":"mt-12 pt-8 border-t border-[var(--line)] text-center","children":["$","$Le",null,{"href":"/","className":"font-mono text-[var(--muted)] text-sm hover:text-[var(--blue-strong)] transition-colors","children":"← Back to KubeIntellect home"}]}]
+27:["$","li",null,{"children":["$","a",null,{"href":"https://github.com/MSKazemi/kubeintellect","target":"_blank","rel":"noopener","className":"hover:text-[var(--blue-strong)] transition-colors","children":"GitHub"}]}]
+28:["$","div",null,{"children":[["$","h3",null,{"className":"text-[var(--ink)] font-mono font-semibold text-xs tracking-widest uppercase mb-4","children":"kube_q CLI"}],["$","ul",null,{"className":"space-y-2.5 text-sm","children":[["$","li",null,{"children":["$","a",null,{"href":"https://mskazemi.github.io/kube_q/","target":"_blank","rel":"noopener noreferrer","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Documentation"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://github.com/MSKazemi/kubeintellect/tree/main/v4/packages/kube-q","target":"_blank","rel":"noopener","className":"hover:text-[var(--blue-strong)] transition-colors","children":"GitHub"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://x.com/Kubeintellect","target":"_blank","rel":"noopener noreferrer","className":"hover:text-[var(--blue-strong)] transition-colors","children":"X / Twitter"}]}],["$","li",null,{"children":["$","a",null,{"href":"https://www.linkedin.com/in/mskazemi/","target":"_blank","rel":"noopener noreferrer","className":"hover:text-[var(--blue-strong)] transition-colors","children":"LinkedIn"}]}]]}]]}]
+29:["$","div",null,{"className":"border-t border-[var(--line)] pt-8 flex flex-col sm:flex-row justify-between items-center gap-4","children":[["$","p",null,{"className":"text-xs flex items-center gap-4","children":[["$","a",null,{"href":"/privacy","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Privacy"}],["$","a",null,{"href":"/terms","className":"hover:text-[var(--blue-strong)] transition-colors","children":"Terms"}],["$","a",null,{"href":"mailto:mohsen@mskazemi.com","className":"hover:text-[var(--blue-strong)] transition-colors","children":"mohsen@mskazemi.com"}]]}],["$","div",null,{"className":"flex items-center gap-4","children":[["$","a",null,{"href":"https://x.com/Kubeintellect","target":"_blank","rel":"noopener noreferrer","className":"hover:text-[var(--blue-strong)] transition-colors","aria-label":"X (Twitter)","children":["$","svg",null,{"className":"w-4 h-4","fill":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.742l7.732-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"}]}]}],["$","a",null,{"href":"https://github.com/MSKazemi/kubeintellect","target":"_blank","rel":"noopener","className":"hover:text-[var(--blue-strong)] transition-colors","aria-label":"GitHub","children":["$","svg",null,{"className":"w-4 h-4","fill":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"fillRule":"evenodd","d":"M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z","clipRule":"evenodd"}]}]}],["$","a",null,{"href":"https://www.linkedin.com/in/mskazemi/","target":"_blank","rel":"noopener noreferrer","className":"hover:text-[var(--blue-strong)] transition-colors","aria-label":"LinkedIn","children":["$","svg",null,{"className":"w-4 h-4","fill":"currentColor","viewBox":"0 0 24 24","children":["$","path",null,{"d":"M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"}]}]}]]}]]}]
+2b:null
+8:C
+1d:0
+a:"$undefined"
+6:"$undefined"
+1c:"$undefined"
+15:"$undefined"

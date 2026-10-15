@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060d1f"/>
+      <stop offset="60%" style="stop-color:#0a1628"/>
+      <stop offset="100%" style="stop-color:#0f2d5e"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#93c5fd"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="cardshadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <style>
+    .sans { font-family: 'Inter','Helvetica Neue','Liberation Sans',Arial,sans-serif; }
+    .mono { font-family: 'DejaVu Sans Mono','JetBrainsMono Nerd Font Mono','Courier New',monospace; }
+  </style>
+
+  <!-- Background -->
+  <rect width="1500" height="500" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g stroke="#1e3a5f" stroke-width="1" opacity="0.20">
+    <line x1="0" y1="83" x2="1500" y2="83"/>
+    <line x1="0" y1="166" x2="1500" y2="166"/>
+    <line x1="0" y1="249" x2="1500" y2="249"/>
+    <line x1="0" y1="332" x2="1500" y2="332"/>
+    <line x1="0" y1="415" x2="1500" y2="415"/>
+    <line x1="250" y1="0" x2="250" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="750" y1="0" x2="750" y2="500"/>
+    <line x1="1000" y1="0" x2="1000" y2="500"/>
+    <line x1="1250" y1="0" x2="1250" y2="500"/>
+  </g>
+
+  <!-- Ambient glow -->
+  <circle cx="180" cy="230" r="220" fill="#1d4ed8" opacity="0.07"/>
+  <circle cx="1280" cy="300" r="280" fill="#1d4ed8" opacity="0.08"/>
+
+  <!-- Faint K8s wheel watermark (texture only, sits behind the card) -->
+  <g transform="translate(1290,255)" opacity="0.13">
+    <circle r="185" fill="none" stroke="url(#blue)" stroke-width="13"/>
+    <g stroke="url(#blue)" stroke-width="12" stroke-linecap="round">
+      <line x1="0" y1="-65" x2="0" y2="-165"/>
+      <line x1="50.8" y1="-40.5" x2="129.9" y2="-103.5"/>
+      <line x1="63.4" y1="14.5" x2="162.4" y2="37.1"/>
+      <line x1="28.2" y1="58.5" x2="72.3" y2="149.6"/>
+      <line x1="-28.2" y1="58.5" x2="-72.3" y2="149.6"/>
+      <line x1="-63.4" y1="14.5" x2="-162.4" y2="37.1"/>
+      <line x1="-50.8" y1="-40.5" x2="-129.9" y2="-103.5"/>
+    </g>
+    <circle r="63" fill="#060d1f" stroke="url(#blue)" stroke-width="13"/>
+    <circle r="10" fill="#60a5fa"/>
+    <circle cx="0" cy="-30" r="6" fill="#93c5fd"/>
+    <circle cx="26" cy="15" r="6" fill="#93c5fd"/>
+    <circle cx="-26" cy="15" r="6" fill="#93c5fd"/>
+    <line x1="0" y1="0" x2="0" y2="-30" stroke="#60a5fa" stroke-width="2.5"/>
+    <line x1="0" y1="0" x2="26" y2="15" stroke="#60a5fa" stroke-width="2.5"/>
+    <line x1="0" y1="0" x2="-26" y2="15" stroke="#60a5fa" stroke-width="2.5"/>
+  </g>
+
+  <!-- ===== TOP ROW ===== -->
+  <!-- Wordmark -->
+  <text class="sans" x="80" y="88" font-size="40" font-weight="800" fill="#f1f5f9" letter-spacing="-0.5">KubeIntellect</text>
+
+  <!-- Right meta: peer review -->
+  <text class="sans" x="1420" y="84" font-size="17" font-weight="600" text-anchor="end" fill="#94a3b8">
+    <tspan fill="#93c5fd">Peer-reviewed</tspan><tspan fill="#64748b">  ·  J. Grid Computing 2026</tspan>
+  </text>
+
+  <!-- ===== TERMINAL CARD (the hero) ===== -->
+  <g transform="translate(80,118)" filter="url(#cardshadow)">
+    <rect width="1340" height="268" rx="14" fill="#0d1f3c" stroke="#1e40af" stroke-width="1.5"/>
+
+    <!-- title bar -->
+    <circle cx="28" cy="27" r="6.5" fill="#ef4444" opacity="0.85"/>
+    <circle cx="50" cy="27" r="6.5" fill="#f59e0b" opacity="0.85"/>
+    <circle cx="72" cy="27" r="6.5" fill="#22c55e" opacity="0.85"/>
+    <text class="mono" x="104" y="32" font-size="14" fill="#475569">kq — kubeintellect</text>
+    <line x1="0" y1="52" x2="1340" y2="52" stroke="#1e3a5f" stroke-width="1"/>
+
+    <!-- the exchange -->
+    <text class="mono" x="34" y="100" font-size="21" fill="#e2e8f0">
+      <tspan fill="#64748b">$ </tspan>kq --query "why is backend crashing?"
+    </text>
+    <text class="mono" x="34" y="140" font-size="21" fill="#60a5fa">
+      <tspan fill="#475569">⎿ </tspan>Root cause: OOM — backend exceeded its 128Mi memory limit
+    </text>
+    <text class="mono" x="34" y="180" font-size="21" fill="#60a5fa">
+      <tspan fill="#475569">⎿ </tspan>Proposed fix: kubectl set resources deploy/backend --limits=memory=512Mi
+    </text>
+
+    <!-- the differentiator: it stops and asks before it touches the cluster -->
+    <rect x="18" y="202" width="1304" height="36" rx="8" fill="#f59e0b" opacity="0.07"/>
+    <rect x="18" y="202" width="4" height="36" rx="2" fill="#f59e0b" opacity="0.75"/>
+    <text class="mono" x="34" y="226" font-size="21" font-weight="700" fill="#f59e0b">Apply this change?  [y/N]</text>
+    <rect x="352" y="210" width="11" height="21" fill="#f59e0b" opacity="0.9"/>
+  </g>
+
+  <!-- ===== BOTTOM ROW (left kept clear for the X avatar) ===== -->
+  <text class="sans" x="1420" y="408" font-size="20" font-weight="500" text-anchor="end" fill="#3b82f6">kubeintellect.com</text>
+</svg>

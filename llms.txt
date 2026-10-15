@@ -1,0 +1,44 @@
+# KubeIntellect
+
+> KubeIntellect is the human-governed AI SRE for Kubernetes. It diagnoses cluster failures, performs root cause analysis, automates cluster operations, and answers questions about your Kubernetes workloads through natural language — with human-in-the-loop safety gates.
+
+KubeIntellect is built as a multi-agent LLM system that connects to your Kubernetes cluster via kubeconfig, runs kubectl commands, and synthesizes findings into actionable diagnoses with suggested fixes. KubeIntellect is also open source. The CLI tool is called `kq` (package `kube-q`, Python 3.12+) and is installed as part of `pip install kubeintellect`. KubeIntellect runs on your own infrastructure with your own LLM key: `pip install kubeintellect`, then `kubeintellect init` (a setup wizard that asks for your OpenAI or Azure OpenAI key, uses your kubeconfig or creates a local Kind cluster, generates your API key and configures kq), then `kq -q "why is my pod crashlooping?"`. It is also available as the container image `ghcr.io/mskazemi/kubeintellect` for Docker Compose or Helm.
+
+## Product
+
+- [Homepage](https://kubeintellect.com): Product overview, features, and docs
+- [Architecture](https://kubeintellect.com/architecture): How KubeIntellect works today (v4, the current release): a lean coordinator, a parallel cluster snapshot with a completeness check, four parallel subagents (Pod, Metrics, Logs, Events) over kubectl, Prometheus and Loki, role checks with Secrets always blocked, and a default-on human approval gate before any write — plus the published, peer-reviewed v1 architecture (a LangGraph supervisor with 13 specialized agents and runtime tool synthesis) and the lineage between them: v2 (lean baseline, where the coordinator and guarded tools arrived; v4 builds on it), v3 (experimental DeepAgents reframing, not carried forward) and v5 (a design tier of experimental flags inside v4, off by default, not a release)
+- [Demo](https://kubeintellect.com/demo): Recorded terminal demo of a KubeIntellect session, plus instructions to run it yourself on your own cluster or a local Kind cluster
+- [Documentation](https://kubeintellect.com/docs): Full product documentation including CLI reference
+- [Research](https://kubeintellect.com/research): The peer-reviewed paper, evaluation results, open-source repositories, how to cite KubeIntellect, and a build-in-public changelog. KubeIntellect is peer-reviewed and published in the Journal of Grid Computing (Springer), vol. 24, no. 3, 2026 — DOI 10.1007/s10723-026-09837-6, by Mohsen Seyedkazemi Ardebili and Andrea Bartolini. Peer-reviewed results: 93% query resolution (186/200), +25 points over a GPT-4o baseline, 81.8% runtime tool-synthesis success, 7–10s per query, on a live four-node cluster (170 pods, 18 namespaces).
+
+## Open source & contributing
+
+KubeIntellect is open source. Development happens in public on GitHub at github.com/MSKazemi/kubeintellect, and the project is actively seeking contributors. Contributing requires **only Python 3.12+** — no Kubernetes cluster, no Docker daemon, and no LLM API key, because the test suites are fully mocked. Cloning the repository and running `make setup` installs the workspace and runs six of the nine checks required to merge (the install smoke test and both Python 3.13 test jobs run only in CI). Active development happens in the `v4/` directory; `v1/`–`v3/` are frozen design-lineage snapshots that accept documentation fixes only. Any accepted contribution must preserve the human-in-the-loop approval gate on every mutating cluster operation. AI-assisted contributions are explicitly welcome when disclosed in the pull request.
+
+- [GitHub repository](https://github.com/MSKazemi/kubeintellect): source code, issue tracker, and releases
+- [Contributing guide](https://github.com/MSKazemi/kubeintellect/blob/main/CONTRIBUTING.md): dev setup, the exact CI gate commands, and a complete worked first pull request
+- [Good first issues](https://github.com/MSKazemi/kubeintellect/contribute): curated small, well-scoped starting tasks for new contributors
+- [AGENTS.md](https://github.com/MSKazemi/kubeintellect/blob/main/AGENTS.md): machine-readable repository rules for AI coding agents (agents.md format)
+- [Discussions](https://github.com/MSKazemi/kubeintellect/discussions): questions, ideas, and Q&A with the maintainer
+- [Governance](https://github.com/MSKazemi/kubeintellect/blob/main/GOVERNANCE.md): decision-making and the contributor ladder
+
+## Blog
+
+- [Blog](https://kubeintellect.com/blog): Technical writing on LLM agents, AI SRE, and Kubernetes operations.
+- [KubeIntellect is peer-reviewed and open access](https://kubeintellect.com/blog/kubeintellect-peer-reviewed-paper): The framework is published open access in the Journal of Grid Computing (Springer, 2026) — 93% query resolution on a live cluster, +25 points over a raw GPT-4o baseline. The complete paper is available via DOI 10.1007/s10723-026-09837-6 (an earlier, shorter preprint is on arXiv 2509.02449).
+- [How to choose an AI tool for Kubernetes](https://kubeintellect.com/blog/ai-kubernetes-tools-landscape): A capability-first guide — the difference between look, explain, reason, and act, and where to draw the safety line.
+- [When an AI agent hits a wall, it should write its own tool](https://kubeintellect.com/blog/runtime-tool-synthesis): How the published v1 architecture of KubeIntellect synthesizes, validates (AST checks, a time-bounded test run under the ServiceAccount's RBAC), and registers new Kubernetes tools at runtime, with 81.8% success on novel requests.
+- [Why more AI agents is not more capability](https://kubeintellect.com/blog/more-agents-is-not-more-capability): An engineering lesson from building an LLM operator for Kubernetes — going from the 13 specialized agents of the published v1 architecture to a lean coordinator made it better and cheaper (preprint results).
+- [A Kubernetes AI agent should never say 'healthy' about pods it couldn't see](https://kubeintellect.com/blog/never-answer-healthy-from-a-truncated-snapshot): How a truncated cluster listing (one CrashLoopBackOff sorted past an 8,000-character cap on a 401-pod cluster) produced a false "no issues" answer, why green tests missed it, and the fix.
+
+## Kubernetes Technical Guides
+
+- [Kubernetes Debugging Guide](https://kubeintellect.com/kubernetes-debugging-guide): Systematic approach to diagnosing pod failures, node issues, network problems, DNS failures, storage failures, and resource exhaustion — with kubectl commands for every scenario
+- [Fix CrashLoopBackOff](https://kubeintellect.com/fix-crashloopbackoff): Complete guide to diagnosing and resolving CrashLoopBackOff — covering exit codes, OOMKill, bad configuration, missing secrets, liveness probe misconfiguration, init container failures, and startup ordering problems
+- [Kubernetes Root Cause Analysis](https://kubeintellect.com/kubernetes-root-cause-analysis): Structured RCA methodology for Kubernetes incidents — timeline reconstruction, blast radius mapping, change vector identification, signal correlation, postmortem templates, and common root cause patterns
+- [Kubernetes AI Ops](https://kubeintellect.com/kubernetes-ai-ops): How AI and LLMs are transforming Kubernetes operations — anomaly detection, automated remediation, natural language cluster queries, capacity forecasting, and the AI Ops maturity model
+- [Natural Language kubectl](https://kubeintellect.com/kubectl-natural-language): How AI translates plain-English intent into the correct kubectl command — the translation loop, cluster grounding, the read/write human-approval safety gate, worked English-to-kubectl examples, and the limits worth knowing
+- [K8s Troubleshooting Playbook](https://kubeintellect.com/k8s-troubleshooting-playbook): Copy-paste kubectl playbooks for every common Kubernetes failure: Pending pods, ImagePullBackOff, Node NotReady, service routing failures, RBAC errors, stuck rollouts, HPA issues, DNS failures, PVC problems, Ingress misconfigurations, resource quota exhaustion, CronJob failures
+- [AI SRE for Kubernetes](https://kubeintellect.com/ai-sre-for-kubernetes): What an AI SRE for Kubernetes is and how KubeIntellect delivers it — a human-governed operator that detects, diagnoses, and remediates with human approval and an audit trail
+- [Kubernetes AI Security](https://kubeintellect.com/kubernetes-ai-security): Is it safe to let AI manage a Kubernetes cluster? KubeIntellect's security model — read-only RBAC by default, human-in-the-loop approval on every change by default (skipping it is an explicit operator opt-in), RBAC, protected namespaces, and Secrets the agent cannot read
