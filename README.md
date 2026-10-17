@@ -11,3 +11,9 @@ don't send changes against them. For the product itself, see
 
 Peer-reviewed: *KubeIntellect*, Journal of Grid Computing (Springer, 2026),
 [DOI 10.1007/s10723-026-09837-6](https://doi.org/10.1007/s10723-026-09837-6).
+
+<!-- legal-notice: start -->
+### Legal notice and responsible use
+
+The materials in this repository are made available without warranties to the extent permitted by applicable law. **Read the [Disclaimer and Responsible-Use Notice](DISCLAIMER.md)** before relying on them. It does not change existing software licenses or limit rights that cannot lawfully be waived.
+<!-- legal-notice: end -->
